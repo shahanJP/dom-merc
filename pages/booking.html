@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/booking.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Booking</title>
+  </head>
+ <!-- ///// -->
+  <body>
+    <form id="form" action="home.html" method="GET" >
+      <div class="title">
+        <h2>Book Your Model</h2>
+      </div>
+      <!-- FIRSTNAME -->
+      <div class="input-group">
+        <label for="username">First Name </label>
+        <input type="text" id="username" placeholder="Name" name="username" />
+        <i class="fa fa-check-circle"></i>
+        <i class="fa fa-exclamation-circle"></i>
+        <p>Error Message</p>
+      </div>
+      <!-- LASTTNAME -->
+      <div class="input-group">
+        <label for="lastName">LAST Name</label>
+        <input type="text" id="lastName" placeholder="Last Name" name="lastname" />
+        <i class="fa fa-check-circle"></i>
+        <i class="fa fa-exclamation-circle"></i>
+        <p>Error Message</p>
+      </div>
+      <!-- EMAIL -->
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Email" name="email" />
+        <i class="fa fa-check-circle"></i>
+        <i class="fa fa-exclamation-circle"></i>
+        <p>Error Message</p>
+      </div>
+      <!-- PHONE -->
+      <div class="input-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="Phone" name="phone" />
+        <i class="fa fa-check-circle"></i>
+        <i class="fa fa-exclamation-circle"></i>
+        <p>Error Message</p>
+      </div>
+
+      <!-- model name -->
+      <div class="input-group">
+        <label for="modal">Modal</label>
+        <select id="modal" name="modal">
+          <option value="">CHOOSE MODEL</option>
+          <option value="a-class">A-Class</option>
+          <option value="amg">AMG</option>
+          <option value="c-class">C-Class</option>
+          <option value="e-class">E-Class</option>
+          <option value="s-class">S-Class</option>
+        </select>
+        <i class="fa fa-check-circle"></i>
+        <i class="fa fa-exclamation-circle"></i>
+        <p>Error Message</p>
+      </div>
+
+      <div class="input-group">
+        <label for="desc">Description <span style="color:rgba(12, 97, 101, 0.867)">( optional )</span> </label>
+        <textarea id="desc" name="desc" rows="4" cols="50"></textarea>
+       <i class="fa fa-check-circle"></i>
+        <i class="fa fa-exclamation-circle"></i>
+        <p>Error Message</p>
+      </div>
+      
+      <button type="submit" class="btn">Submit</button>
+    </form>
+
+    <!-- JAVASCRIPT -->
+    <script src="./booking.js"></script>
+  </body>
+</html>
